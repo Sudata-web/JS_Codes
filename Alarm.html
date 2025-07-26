@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Alarm</title>
+</head>
+<body>
+  <h1>Alarm Clock</h1>
+  <label for="time">Set Alarm (seconds): </label>
+  <input type="number" id="time" placeholder="Enter seconds" />
+  <button onclick="startAlarm()">Start Alarm</button>
+
+  <h3 id="countdown"></h3>
+  <h2 id="alarmMessage"></h2>
+
+  <script>
+    let countdownInterval;
+
+    function startAlarm() {
+      const timeInput = document.getElementById("time");
+      const seconds = parseInt(timeInput.value);
+
+      if (isNaN(seconds) || seconds <= 0) {
+        alert("Please enter a valid number of seconds!");
+        return;
+      }
+
+      document.getElementById("alarmMessage").textContent = "";
+      let remaining = seconds;
+
+      // Countdown using setInterval
+      countdownInterval = setInterval(() => {
+        document.getElementById("countdown").textContent = `Alarm in ${remaining} second(s)...`;
+        remaining--;
+
+        if (remaining < 0) {
+          clearInterval(countdownInterval);
+        }
+      }, 1000);
+
+      // Alarm using setTimeout
+      setTimeout(() => {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").textContent = "";
+        document.getElementById("alarmMessage").textContent = "⏰ Alarm!Good Morning!";
+        alert("⏰Alarm!Good Morning⏰");
+      }, seconds * 1000);
+    }
+  </script>
+</body>
+</html>
