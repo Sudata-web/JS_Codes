@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>function Call</title>
+</head>
+<body>
+  <script>
+    //check even odd function
+    function isOdd(number) {
+      let remainder = number % 2;
+      let isOdd = remainder == 1;
+      return isOdd;
+    }
+    console.log(isOdd(3));
+    console.log(isOdd(4));
+
+
+    //largest number function
+    function large(num1, num2) {
+      if (num1 > num2) {
+        return num1;
+      } else {
+        return num2;
+      }
+      // return num1 > num2 ? num1 : num2;    //ternary operator
+    }
+    console.log(large(5, 10));
+    console.log(large(15, 10));
+
+
+
+    functiontoFahrenheit(celsius) {
+      return (celsius * 9/5) + 32;
+    }
+    console.log(functiontoFahrenheit(0));  //32
+    console.log(functiontoFahrenheit(100)); //212
+
+
+  </script>
+</body>
+</html>

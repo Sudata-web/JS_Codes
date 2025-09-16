@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    let product = {
+      company: 'Apple',
+      model: 'iPhone 14 Pro Max',
+      price: 129900,
+      color: 'Deep Purple',
+    };
+    console.log(product);
+
+
+    //accessing object properties
+    console.log(product.company);
+    product.price = 119900;          //updating object property
+    console.log(product.price); 
+  
+
+    delete product.color;            //deleting object property
+    console.log(product);
+
+
+    console.log(product.model.length);   //length of string property
+    console.log(product.model.toUpperCase());  //string method on object property
+    console.log(product.model.includes('iPhone'));  //string method on object property
+
+    console.log(Object.keys(product));   //list of object properties
+
+
+    
+
+    //OBJECT REFERENCE
+
+    let a = 5;
+    let b = a;   //copy by value
+    console.log (`a=${a}, b=${b}`);
+    a = 10;
+    console.log (`a=${a}, b=${b}`);   //b is not changed
+
+    let obj1 = {value: 5};
+    let obj2 = obj1;   //copy by reference
+    console.log(`obj1.value=${obj1.value}, obj2.value=${obj2.value}`);
+    obj1.value = 10;
+
+  </script>
+</body>
+</html>

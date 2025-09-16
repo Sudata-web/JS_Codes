@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 20px;
+      color: #000;
+    }
+    .invoice-box {
+      width: 100%;
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    .header, .footer {
+      text-align: center;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 5px;
+      text-align: center;
+    }
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+    .no-border td {
+      border: none;
+    }
+    .notes {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-box">
+    <div class="header">
+      <h2>GIRI OPTICALS</h2>
+      <p>PLOT NO.-516/1676 (P) PATIA</p>
+    </div>
+
+    <table class="no-border">
+      <tr>
+        <td class="left">
+          <b>GST No :</b> 21AAFFG9665C1ZK<br>
+          <b>DL No :</b> <br>
+          <b>Miss :</b> SUDATA KHUNTIA<br>
+          <b>Phone :</b> 6372729796<br>
+          <b>Address :</b> BHUBANESWAR
+        </td>
+        <td class="right">
+          <b>Phone :</b> 9348127161<br>
+          <b>Invoice No :</b> 7257<br>
+          <b>Invoice Date :</b> 15-Sep-2025<br>
+          <b>Mobile No :</b> 9348127161
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Sr.</th>
+        <th>Description</th>
+        <th>HSN</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>MRP</th>
+        <th>Disc Amt</th>
+        <th>Total</th>
+        <th>Taxable</th>
+        <th>CGST%</th>
+        <th>SGST%</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>12005-50-</td>
+        <td>9003</td>
+        <td>1</td>
+        <td>PCS</td>
+        <td>600.00</td>
+        <td>60.00</td>
+        <td>600.00</td>
+        <td>482.14</td>
+        <td>6.00</td>
+        <td>6.00</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>ESSILOR FSV-1.50 CRIZAL EPRO BCT</td>
+        <td>9001</td>
+        <td>2</td>
+        <td>PCS</td>
+        <td>1350.00</td>
+        <td>270.00</td>
+        <td>2700.00</td>
+        <td>2169.64</td>
+        <td>6.00</td>
+        <td>6.00</td>
+      </tr>
+      <tr>
+        <td colspan="6" class="right"><b>Total</b></td>
+        <td>330.00</td>
+        <td>3300.00</td>
+        <td>2651.78</td>
+        <td>159.11</td>
+        <td>159.11</td>
+      </tr>
+    </table>
+
+    <table class="no-border">
+      <tr>
+        <td class="left notes">
+          • NO GUARANTEE ON BREAKAGE, SCRATCH ON FRAME AND LENS AFTER DELIVERY.<br>
+          • NO COLOUR GUARANTEE ON FRAME.<br>
+          • NO EXCHANGE.<br>
+          • REPAIRS AND FITTINGS AT CUSTOMERS RISK
+        </td>
+        <td class="right">
+          GROSS AMOUNT : 3300.00<br>
+          BOOK AMOUNT(-) : 0.00<br>
+          LESS DISCOUNT(-) : 330.00<br>
+          ADD CGST : 159.11<br>
+          ADD SGST : 159.11<br>
+          R/OFF AMT : 0.00<br>
+          <b>G.Total(Rs.) : 2970.00</b>
+        </td>
+      </tr>
+    </table>
+
+    <p><b>PAYMENT MODE :</b> Cash</p>
+    <p><b>Amount in Words(Rs):</b> Two Thousand Nine Hundred Seventy Only</p>
+
+    <div class="footer">
+      <p>Authorised Signature<br>
+      All Subject to BHUBANESWAR Jurisdiction Only.</p>
+    </div>
+  </div>
+</body>
+</html>

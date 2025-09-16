@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let product = {
+      name: 'jeans',
+      size: '5',
+      color: 'red',
+      price: 500,
+      'delivery-time': 'same day delivary',
+    };
+
+    // let copyProduct = product;
+    // console.log(product);
+    // copyProduct.size = 'm';
+    // console.log(product);
+
+  console.log([product.delevery-time]);
+
+  let obj = {
+    Message: 'good morning',
+    status: 'active',
+  };
+  console.log(obj);
+  let {Message, status} = obj;   //object destructuring
+  console.log(obj.Message);
+  console.log(obj.status);
+
+
+  function isIdenticalProduct(product1, product2) {
+   if (product1 == product2) {
+    return true;
+   } else {
+    return false;
+   }
+  }
+  let product1 = {
+    name: 'jeans',
+    size: '5',
+    color: 'red',
+    price: 500
+  };
+  let product2 = {
+    name: 'jeans',
+     size: '5',
+     color: 'red',
+     price: 500
+   };
+  console.log(isIdenticalProduct(product1, product2));  //false
+  console.log(isIdenticalProduct(product1, product1));  //true
+
+
+  </script>
+</body>
+</html>

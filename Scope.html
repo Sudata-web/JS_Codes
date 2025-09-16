@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>Scope</title>
+</head>
+<body>
+  <script>
+
+    let age = 34;
+    var usermsg = 'Hello User'; // global scope /dost't have block scope
+    if (age > 18) {
+      let usermsg = 20;
+      console.log(usermsg);
+    } else {
+      let usermsg = 16;
+      console.log(usermsg);
+    }
+    console.log(usermsg); // error as usermsg is not defined in this scope
+
+  </script>
+</body>
+</html>
